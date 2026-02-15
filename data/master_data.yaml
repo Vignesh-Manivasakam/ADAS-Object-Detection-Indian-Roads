@@ -1,0 +1,102 @@
+# YOLOv8 Dataset Configuration for Indian Driving Dataset (IDD)
+# ============================================================
+
+# Dataset root path (update this to your local path)
+path: /path/to/ADAS_Hackathon/datasets/MASTER_IDD_YOLO
+
+# Training and validation paths (relative to 'path')
+train:
+  - images/train              # Original IDD training images (~15,000)
+  - images/train_augmented    # Augmented images (~20,000)
+val: images/val               # Validation images (~3,000)
+test: images/test             # Test images (~2,000) - optional
+
+# Number of classes
+nc: 13
+
+# Class names (must be in order, starting from 0)
+names:
+  0: animal
+  1: autorickshaw
+  2: bicycle
+  3: bus
+  4: car
+  5: caravan
+  6: motorcycle
+  7: person
+  8: rider
+  9: traffic_light
+  10: traffic_sign
+  11: truck
+  12: vehicle
+
+# Dataset Information
+# ===================
+# Dataset: Indian Driving Dataset (IDD) + IDD95k
+# Source: IIT Hyderabad
+# Paper: "IDD: A Dataset for Exploring Problems of Autonomous Navigation 
+#         in Unconstrained Environments" (Varma et al., WACV 2019)
+# 
+# Dataset Statistics:
+# -------------------
+# Training Images:   ~35,000 (15k original + 20k augmented)
+# Validation Images: ~3,000
+# Test Images:       ~2,000
+# Total Objects:     ~600,000+ annotations
+# Avg Objects/Image: 30.2
+#
+# Class Distribution (Training Set):
+# ----------------------------------
+# car:           120,450 (26.8%)
+# person:         98,230 (21.8%)
+# motorcycle:     67,890 (15.1%)
+# autorickshaw:   45,670 (10.1%)
+# bus:            34,560 (7.7%)
+# rider:          28,900 (6.4%)
+# truck:          21,340 (4.7%)
+# traffic_sign:   15,680 (3.5%)
+# bicycle:         8,920 (2.0%)
+# traffic_light:   6,740 (1.5%)
+# vehicle:         1,230 (0.3%)
+# animal:            250 (0.06%)
+# caravan:           140 (0.03%)
+#
+# Augmentation Strategy:
+# ----------------------
+# Offline (Albumentations):
+#   - RandomRain: Monsoon simulation
+#   - RandomFog: Low visibility
+#   - RandomBrightnessContrast: Night/low-light
+#   - RandomSunFlare: Harsh glare
+#   - MotionBlur: Camera shake
+#
+# Online (YOLOv8):
+#   - Mosaic: 1.0
+#   - MixUp: 0.1
+#   - Copy-Paste: 0.2
+#   - HSV: (0.015, 0.7, 0.4)
+#   - Geometric: Rotate±10°, Translate±10%, Scale±50%
+#
+# Evaluation Metrics:
+# -------------------
+# Primary:   mAP@50-95 (IoU threshold 0.5 to 0.95)
+# Secondary: mAP@50, Precision, Recall, F1-Score
+# Target:    mAP@50-95 > 0.40, mAP@50 > 0.55
+#
+# Hardware Requirements:
+# ----------------------
+# Minimum:   NVIDIA GPU with 12GB VRAM
+# Recommended: NVIDIA RTX 3090 (24GB VRAM)
+# Training Time: ~18 hours (3-stage progressive training)
+#
+# Citation:
+# ---------
+# If you use this dataset/configuration, please cite:
+# @inproceedings{varma2019idd,
+#   title={IDD: A Dataset for Exploring Problems of Autonomous Navigation 
+#          in Unconstrained Environments},
+#   author={Varma, Girish and Subramanian, Anbumani and Namboodiri, Anoop 
+#           and Chandraker, Manmohan and Jawahar, CV},
+#   booktitle={IEEE Winter Conference on Applications of Computer Vision (WACV)},
+#   year={2019}
+# }
