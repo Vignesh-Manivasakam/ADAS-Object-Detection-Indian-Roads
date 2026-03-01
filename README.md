@@ -156,7 +156,10 @@ Decisions are assigned a priority level and the highest-priority threat in frame
 Side-entry objects (entering from frame edges) receive reduced threat confidence and are excluded from STOP/APPLY BRAKE triggers until they've been tracked for 8+ frames in the path.
 
 ---
-![Inference UI](assets/demo/inference UI.png)
+### Inference UI
+<p align="center">
+  <img src="assets/demo/inference UI.png" alt="Infernece UI" width="800"/>
+</p>
 
 ### 🔁 Object Tracking & Class Stability
 
