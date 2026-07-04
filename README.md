@@ -9,6 +9,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
+  <img src="assets/ADAS.png" alt="ADAS System Architecture" width="800"/>
+</p>
+
+<p align="center">
   <img src="assets/demo/detection_results.gif" alt="ADAS Detection Demo" width="800"/>
   <br>
   <em>Real-time object detection + safety decision-making optimized for challenging Indian road conditions</em>
