@@ -1,12 +1,12 @@
 # 🚗 ADAS Object Detection & Real-Time Safety Decision System
-### YOLOv8-based Multi-Class Detection + Production Inference Engine | 🏆 1st Prize
-
+### YOLOv8-based Multi-Class Detection + Production Inference Engine | 🏆 1st Prize Winner
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00C9FF)](https://github.com/ultralytics/ultralytics)
 [![ONNXRuntime](https://img.shields.io/badge/ONNXRuntime-005CED?logo=onnx)](https://onnxruntime.ai/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv)](https://opencv.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Author](https://img.shields.io/badge/Author-Vignesh_Manivasakam-0A66C2.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vignesh-manivasakam)
 
 <p align="center">
   <img src="assets/ADAS.png" alt="ADAS System Architecture" width="800"/>
@@ -29,7 +29,7 @@ This project implements a **full-stack, production-ready ADAS system** specifica
 - **Layer 2 — Inference Engine**: A real-time safety decision pipeline that wraps the model and translates detections into structured driving commands
 
 ### Key Achievements
-- 🏆 **Won ADAS Hackathon** for Indian road scenario object detection
+- 🏆 **1st Prize Winner — Autonomous Driving & Edge Computer Vision Hackathon (Bosch Global Software Technologies)**
 - 📊 **mAP@50-95: 0.420** | **mAP@50: 0.641** on IDD dataset
 - 🎯 **Precision: 0.773** | **Recall: 0.569** | **F1-Score: 0.655**
 - 🚀 **13 object classes** detected with real-time performance
@@ -622,7 +622,7 @@ Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 **Vignesh Manivasakam**
 - 📧 Email: vicky.manivasagam@gmail.com
-- 💼 LinkedIn: [Vignesh Manivasakam](http://www.linkedin.com/in/vignesh-manivasakam-17b0a2128/)
+- 💼 LinkedIn: [Vignesh Manivasakam](https://www.linkedin.com/in/vignesh-manivasakam)
 - 🐙 GitHub: [@Vignesh-Manivasakam](https://github.com/Vignesh-Manivasakam)
 
 ---
